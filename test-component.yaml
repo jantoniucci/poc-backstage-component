@@ -1,0 +1,16 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-awesome
+  description: |
+    Backend service that implements the Test API, as defined
+    in [the Test RFC](https://example.com/spec/test.html).
+  labels:
+    system: test
+    lifecycle: production
+    example.com/service-discovery-name: testawesome
+  annotations:
+    circleci.com/project-slug: gh/example-org/test-awesome
+spec:
+  type: service
